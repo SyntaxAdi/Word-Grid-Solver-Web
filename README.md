@@ -65,7 +65,6 @@ VII. [License](#license)<br>
 
 ```sh
 └── /
-
     ├── app.py
     ├── Dockerfile
     ├── requirements.txt
@@ -279,3 +278,4 @@ This project is protected under the [MIT License](https://github.com/SyntaxAdi/W
 
 
 ---
+
