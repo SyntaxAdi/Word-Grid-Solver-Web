@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Word Search Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="brand">
+                <span class="brand-icon">⚡</span> WORD SEARCH
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active">DASHBOARD</a>
+            </div>
+        </nav>
+
+        <div class="dashboard-grid">
+            <!-- Left Panel: Input / "Energy Flow" -->
+            <div class="panel input-panel">
+                <div class="panel-header">
+                    <h2>INPUT SOURCE</h2>
+                    <div class="badge">UPLOAD</div>
+                </div>
+
+                <div class="upload-zone" id="dropZone">
+                    <div class="zone-content">
+                        <div class="upload-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                        </div>
+                        <div class="upload-text">DROP IMAGE</div>
+                        <div class="upload-subtext">OR CLICK TO BROWSE</div>
+                    </div>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <img id="preview" class="file-preview" alt="Preview">
+                </div>
+
+                <div class="input-group">
+                    <label for="clues">DATA STREAM (PASTE CLUES)</label>
+                    <textarea id="cluesInput"
+                        placeholder="> INITIALIZING SEARCH PROTOCOL...&#10;> WAITING FOR INPUT...&#10;&#10;Find these words:&#10;C-- (3)"></textarea>
+                </div>
+
+                <button id="solveBtn" class="btn-primary">
+                    <span class="btn-icon">⚡</span> INITIATE SCAN
+                </button>
+            </div>
+
+            <!-- Right Panel: Output / "Details" -->
+            <div class="panel output-panel">
+                <div class="panel-header">
+                    <h2>ANALYSIS RESULTS</h2>
+                    <div class="status-indicator" id="statusIndicator">
+                        <span class="dot"></span> IDLE
+                    </div>
+                </div>
+
+                <div id="resultsArea" class="results-content">
+                    <div class="empty-state">
+                        <div class="empty-icon">📊</div>
+                        <div class="empty-text">NO DATA DETECTED</div>
+                    </div>
+                </div>
+
+                <div id="loading" class="loading">
+                    <div class="loader-ring"></div>
+                    <div class="loading-text">PROCESSING MATRIX...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
