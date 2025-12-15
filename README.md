@@ -3,9 +3,9 @@
 <!-- HEADER STYLE: MODERN -->
 <div align="left" style="position: relative; width: 100%; height: 100%; ">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: absolute; top: 0; right: 0;" alt="Project Logo"/>
+<img src="Logo.jpg" width="30%" style="position: absolute; top: 0; right: 0;" alt="Project Logo"/>
 
-# <code>❯ REPLACE-ME</code>
+# <code>❯ Word Grid Solver</code>
 
 <em>Decode puzzles instantly, unleash hidden words<em>
 
@@ -14,6 +14,9 @@
 
 <em>Built with the tools and technologies:</em>
 
+<img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white" alt="HTML5">
+<img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white" alt="CSS3">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black" alt="JavaScript">
 <img src="https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=Flask&logoColor=white" alt="Flask">
 <img src="https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=Docker&logoColor=white" alt="Docker">
 <img src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python">
@@ -35,17 +38,13 @@ V. [Getting Started](#getting-started)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;V.a. [Prerequisites](#prerequisites)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;V.b. [Installation](#installation)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;V.c. [Usage](#usage)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;V.d. [Testing](#testing)<br>
-VI. [Roadmap](#roadmap)<br>
-VII. [Contributing](#contributing)<br>
-VIII. [License](#license)<br>
-IX. [Acknowledgments](#acknowledgments)<br>
+VI. [Contributing](#contributing)<br>
+VII. [License](#license)<br>
+
 
 ---
 
 ## Overview
-
-
 
 ---
 
@@ -66,8 +65,7 @@ IX. [Acknowledgments](#acknowledgments)<br>
 
 ```sh
 └── /
-    ├── __pycache__
-    │   └── solver.cpython-311.pyc
+
     ├── app.py
     ├── Dockerfile
     ├── requirements.txt
@@ -140,6 +138,30 @@ IX. [Acknowledgments](#acknowledgments)<br>
 			</table>
 		</blockquote>
 	</details>
+	<!-- static Submodule -->
+	<details>
+		<summary><b>static</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ static</b></code>
+			<table style='width: 100%; border-collapse: collapse;'>
+			<thead>
+				<tr style='background-color: #f8f9fa;'>
+					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+					<th style='text-align: left; padding: 8px;'>Summary</th>
+				</tr>
+			</thead>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/static/script.js'>script.js</a></b></td>
+					<td style='padding: 8px;'>- Handles the full client-side lifecycle of the application, managing drag-and-drop events and file inputs for image sourcing while providing real-time image previews<br>- It orchestrates asynchronous communication with the Flask backend to submit data and dynamically updates the DOM to display loading states, the detected grid matrix, and interactive search results with copy-to-clipboard functionality.</td>
+				</tr>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/static/style.css'>style.css</a></b></td>
+					<td style='padding: 8px;'>- Implements the 'Phoenix Theme', a modern dark-mode design system featuring a dark grey palette with vibrant orange accents to create a high-contrast, tech-inspired aesthetic<br>- It establishes a responsive grid layout and defines component styles for the upload zone, input panels, and action buttons, incorporating CSS animations and visual effects like glows and scanline backgrounds for a premium user experience.</td>
+				</tr>
+			</table>
+		</blockquote>
+	</details>
 </details>
 
 ---
@@ -172,22 +194,11 @@ Build  from the source and intsall dependencies:
 
 3. **Install the dependencies:**
 
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![docker][docker-shield]][docker-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [docker-shield]: https://img.shields.io/badge/Docker-2CA5E0.svg?style={badge_style}&logo=docker&logoColor=white -->
-	<!-- [docker-link]: https://www.docker.com/ -->
-
 	**Using [docker](https://www.docker.com/):**
 
 	```sh
 	❯ docker build -t / .
 	```
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![pip][pip-shield]][pip-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [pip-shield]: https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white -->
-	<!-- [pip-link]: https://pypi.org/project/pip/ -->
 
 	**Using [pip](https://pypi.org/project/pip/):**
 
@@ -205,33 +216,21 @@ docker run -it {image_name}
 ```
 **Using [pip](https://pypi.org/project/pip/):**
 ```sh
-python {entrypoint}
+python3 app.py
 ```
 
-### Testing
 
- uses the {__test_framework__} test framework. Run the test suite with:
-
-**Using [pip](https://pypi.org/project/pip/):**
-```sh
-pytest
-```
 
 ---
 
-## Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
 
 ## Contributing
 
-- **💬 [Join the Discussions](https://LOCAL///discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://LOCAL///issues)**: Submit bugs found or log feature requests for the `` project.
-- **💡 [Submit Pull Requests](https://LOCAL///blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **💬 [Join the Discussions](https://t.me/RevyChat)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/SyntaxAdi/Word-Grid-Solver-Web/issues)**: Submit bugs found or log feature requests for the Word Grid Solver project.
+- **💡 [Submit Pull Requests](https://github.com/SyntaxAdi/Word-Grid-Solver-Web/pulls)**: Review open PRs, and submit your own PRs.
+- **🌟 [New Feature or Idea?](https://t.me/ItzAditya_XD)**: If you're looking to outsource your project and want someone who delivers without excuses, I’m available for end-to-end development across multiple domains.
 
 <details closed>
 <summary>Contributing Guidelines</summary>
@@ -259,26 +258,15 @@ pytest
 </details>
 
 <details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://LOCAL{///}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=/">
-   </a>
-</p>
-</details>
+
 
 ---
 
 ## License
 
- is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is protected under the [MIT License](https://github.com/SyntaxAdi/Word-Grid-Solver-Web/blob/main/LICENSE). For more details, refer to the [LICENSE](https://github.com/SyntaxAdi/Word-Grid-Solver-Web/blob/main/LICENSE) file.
 
 ---
-
-## Acknowledgments
-
-- Credit `contributors`, `inspiration`, `references`, etc.
 
 <div align="right">
 
